@@ -1,1 +1,17 @@
 <!-- <app-table-example></app-table-example> -->
+<h1>Parent Component</h1>
+<div>
+    <label>message</label>
+    <input type="text" [(ngModel)]="message">
+</div>
+<div>
+    <label>customer name</label>
+    <input type="text" [(ngModel)]="name">
+</div>
+<div>
+    <label>address</label>
+    <input type="text" [(ngModel)]="address">
+
+</div>
+<button (click)="updateCustomer()">Update Customer data</button>
+<app-child [message]="message" [customer]="customer"></app-child>
